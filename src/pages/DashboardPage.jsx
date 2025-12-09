@@ -72,7 +72,7 @@ const DashboardPage = () => {
 
       setIsLoadingAlerts(true);
       const response = await fetch(
-        "http://localhost:5000/api/alerts/my-alerts",
+        "https://breathesafe-project-backend.onrender.com/api/alerts/my-alerts",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -112,7 +112,7 @@ const DashboardPage = () => {
 
       setIsLoadingHistory(true);
       const response = await fetch(
-        "http://localhost:5000/api/aqi-tracker/history",
+        "https://breathesafe-project-backend.onrender.com/api/aqi-tracker/history",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -146,7 +146,7 @@ const DashboardPage = () => {
       if (!token) return;
 
       const response = await fetch(
-        "http://localhost:5000/api/aqi-tracker/count",
+        "https://breathesafe-project-backend.onrender.com/api/aqi-tracker/count",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -180,7 +180,7 @@ const DashboardPage = () => {
         return;
       }
 
-      const response = await fetch("http://localhost:5000/api/auth/me", {
+      const response = await fetch("https://breathesafe-project-backend.onrender.com/api/auth/me", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -226,7 +226,7 @@ const DashboardPage = () => {
 
       setIsLoadingUsers(true);
       const response = await fetch(
-        "http://localhost:5000/api/auth/total-users",
+      "https://breathesafe-project-backend.onrender.com/api/auth/total-users",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -267,7 +267,7 @@ const DashboardPage = () => {
 
       setIsLoadingHealthReports(true);
       const response = await fetch(
-        "http://localhost:5000/api/health-report/count",
+        "https://breathesafe-project-backend.onrender.com/api/health-report/count",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -359,7 +359,7 @@ const DashboardPage = () => {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/aqi-tracker/${id}`,
+        `https://breathesafe-project-backend.onrender.com/api/aqi-tracker/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -400,7 +400,7 @@ const DashboardPage = () => {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/aqi-tracker/delete-all",
+        "https://breathesafe-project-backend.onrender.com/api/aqi-tracker/delete-all",
         {
           method: "DELETE",
           headers: {
@@ -529,7 +529,7 @@ const DashboardPage = () => {
       }
 
       const response = await fetch(
-        "http://localhost:5000/api/auth/update-profile",
+        "https://breathesafe-project-backend.onrender.com/api/auth/update-profile",
         {
           method: "PUT",
           headers: {
